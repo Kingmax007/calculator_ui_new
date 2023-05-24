@@ -41,7 +41,7 @@ class MyApp extends StatelessWidget {
             ),
           ),
           colorScheme:
-          ColorScheme.fromSwatch().copyWith(secondary: redColor),
+          ColorScheme.fromSwatch().copyWith(secondary: buttonColor),
         ),
         routes: {
           '/': (context) => Calculator(),

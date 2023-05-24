@@ -3,10 +3,10 @@ import 'package:flutter/material.dart';
 import 'provider/calculator_provider.dart';
 
 
-const buttonsBackgroundColor = Color(0X00172D);
-const backgroundColor = Color(0x00264D);
-const redColor = Color(0xB21B45);
-const whiteColor = Colors.white;
+const buttonsBackgroundColor = Colors.blue;
+const backgroundColor = Colors.black;
+const buttonColor = Colors.grey;
+const whiteColor = Colors.black;
 
 AppBar appbar(
     BuildContext context,
@@ -63,7 +63,7 @@ class CalculatorButton extends StatelessWidget {
             width: mediaQuery.width * 0.1,
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(5.0),
-              color: redColor,
+              color: buttonColor,
             ),
             child: Center(
               child: Text(
@@ -75,7 +75,7 @@ class CalculatorButton extends StatelessWidget {
               : Text(
             label,
             style: textStyle?.copyWith(
-                color: isColored ? redColor : whiteColor),
+                color: isColored ? buttonColor : whiteColor),
           ),
         ),
       ),
